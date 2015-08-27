@@ -2,8 +2,8 @@ require 'rspec'
 require './hero'
 describe Hero do
 
-  it 'should do something' do
-
-    true.should == false
+  it 'has capitalized name' do
+    hero = Hero.new 'mike'
+    expect(hero.name).to eq 'Mike'
   end
 end
